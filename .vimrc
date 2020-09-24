@@ -39,6 +39,7 @@ call plug#begin('~/.vim/plugins')
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'Yggdroot/indentLine' 
 
 call plug#end()
 
@@ -49,8 +50,7 @@ call plug#end()
 "Tecla lider para ejecutar macros
 let mapleader=" " "Tecla lider para ejecutar macros
 
-"Shorcuts
-
+"Shortcuts
 nmap <Leader>s <Plug>(easymotion-s2)
 nmap <Leader>nt :NERDTreeFind<CR> 
 nmap <Leader>w :w<CR>
@@ -59,3 +59,9 @@ nmap <Leader>wq :wq<CR>
 nmap <Leader>qq :qa!<CR>
 nmap <Leader>t :term<CR>
 let NERDTreeQuitOnOpen=1 "Cierra nerdtree cuando se abre un archivo
+
+
+"IndentLines
+let g:indentLine_char = '|'
+let g:indentLine_enabled = 1
+
