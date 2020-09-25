@@ -72,7 +72,7 @@ let mapleader=" " "Tecla lider para ejecutar macros
 "Shortcuts
 nmap <Leader>s <Plug>(easymotion-s2)
 nmap <Leader>nt :NERDTreeFind<CR> 
-nmap <Leader>w :w<CR>
+nmap <Leader>w <Plug>(Prettier):w<CR>
 nmap <Leader>q :q<CR>
 nmap <Leader>ww :wq<CR>
 nmap <Leader>wq <Plug>(Prettier):wq<CR>
