@@ -58,7 +58,9 @@ Plug 'prettier/vim-prettier', {
     \ 'python',
     \ 'ruby',
     \ 'html',
-    \ 'swift' ] }
+    \ 'swift',
+    \ 'rc'] }
+
 call plug#end()
 
 "Aplicando tema
@@ -73,7 +75,7 @@ nmap <Leader>s <Plug>(easymotion-s2)
 nmap <Leader>nt :NERDTreeFind<CR> 
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
-nmap <Leader>wq :wq<CR>
+nmap <Leader>wq <Plug>(Prettier):wq<CR>
 nmap <Leader>qq :qa!<CR>
 nmap <Leader>t :term<CR>
 nmap <Leader>p <Plug>(Prettier)
