@@ -12,6 +12,9 @@ set showmatch "Cuando el cursor este sobre un parentesis, se colorea el de cierr
 "set noshowmode "no muestra el modo actual p.e --insertar--
 "set paste
 set cursorline "linea debajo del cursor
+set termguicolors "Algo de los colores
+
+
 
 function! UseTabs()
   set tabstop=4     " Size of a hard tabstop (ts).
@@ -58,11 +61,15 @@ Plug 'prettier/vim-prettier', {
     \ 'ruby',
     \ 'html',
     \ 'swift'] }
+Plug 'ycm-core/YouCompleteMe'
+Plug 'bluz71/vim-nightfly-guicolors'
+
 
 call plug#end()
 
 "Aplicando tema
 "colorscheme gruvbox
+colorscheme nightfly
 "let g:gruvbox_contrast_dark = "hard"
 
 "Tecla lider para ejecutar macros
@@ -83,6 +90,7 @@ let NERDTreeQuitOnOpen=1 "Cierra nerdtree cuando se abre un archivo
 "IndentLines
 let g:indentLine_char = '|'
 let g:indentLine_enabled = 1
+let g:indentLine_setColors = 0 "Para el tema nightfly, comentar en caso de problemas 
 
 
 "Prettier
@@ -126,3 +134,8 @@ let g:prettier#config#require_pragma = 'false'
 " defaut: 'lf'
 let g:prettier#config#end_of_line = get(g:, 'prettier#config#end_of_line', 'lf')
 
+
+"You complete me (autocomplete plugin)
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
