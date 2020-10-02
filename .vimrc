@@ -1,7 +1,7 @@
 set number
 set mouse=a  "Control del mouse, habilita el uso
 set numberwidth=1 "Ancho de los números de linea
-set clipboard=unnamed "Habilita el clipboard para todo el sistema
+set clipboard=unnamedplus "Habilita el clipboard para todo el sistema
 syntax enable "habilita colores de sintaxis
 set showcmd "habilita que se muestre los comandos que se esten pulsando
 set ruler "habilita la posicion (7,34) 
@@ -13,9 +13,6 @@ set showmatch "Cuando el cursor este sobre un parentesis, se colorea el de cierr
 "set paste
 set cursorline "linea debajo del cursor
 set termguicolors "Algo de los colores
-
-
-
 function! UseTabs()
   set tabstop=4     " Size of a hard tabstop (ts).
   set shiftwidth=4  " Size of an indentation (sw).
@@ -86,6 +83,8 @@ nmap <Leader>qq :qa!<CR>
 nmap <Leader>p <Plug>(Prettier)
 let NERDTreeQuitOnOpen=1 "Cierra nerdtree cuando se abre un archivo
 
+"NERDTree
+let NERDTreeShowHidden=1 "Archivos ocultos
 
 "IndentLines
 let g:indentLine_char = '|'
