@@ -10,11 +10,9 @@ set showmatch "Cuando el cursor este sobre un parentesis, se colorea el de cierr
 "set relative number "Lineas de posicion relativas
 "set laststatus=2 "barra inferior visible
 "set noshowmode "no muestra el modo actual p.e --insertar--
-"set paste
+set paste
 set cursorline "linea debajo del cursor
 set termguicolors "Algo de los colores
-
-
 
 function! UseTabs()
   set tabstop=4     " Size of a hard tabstop (ts).
@@ -44,7 +42,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'Yggdroot/indentLine' 
 Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
+  \ 'do': 'npm install',
   \ 'branch': 'release/1.x',
   \ 'for': [
     \ 'javascript',
