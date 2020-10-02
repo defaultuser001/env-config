@@ -44,7 +44,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'Yggdroot/indentLine' 
 Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
+  \ 'do': 'npm install',
   \ 'branch': 'release/1.x',
   \ 'for': [
     \ 'javascript',
