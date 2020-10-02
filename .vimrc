@@ -1,7 +1,7 @@
 set number
 set mouse=a  "Control del mouse, habilita el uso
 set numberwidth=1 "Ancho de los números de linea
-set clipboard=unnamedplus "Habilita el clipboard para todo el sistema
+set clipboard=unnamed "Habilita el clipboard para todo el sistema
 syntax enable "habilita colores de sintaxis
 set showcmd "habilita que se muestre los comandos que se esten pulsando
 set ruler "habilita la posicion (7,34) 
@@ -10,9 +10,11 @@ set showmatch "Cuando el cursor este sobre un parentesis, se colorea el de cierr
 "set relative number "Lineas de posicion relativas
 "set laststatus=2 "barra inferior visible
 "set noshowmode "no muestra el modo actual p.e --insertar--
-set paste
+"set paste
 set cursorline "linea debajo del cursor
 set termguicolors "Algo de los colores
+
+
 
 function! UseTabs()
   set tabstop=4     " Size of a hard tabstop (ts).
@@ -42,7 +44,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'Yggdroot/indentLine' 
 Plug 'prettier/vim-prettier', {
-  \ 'do': 'npm install',
+  \ 'do': 'yarn install',
   \ 'branch': 'release/1.x',
   \ 'for': [
     \ 'javascript',
