@@ -7,7 +7,7 @@ set showcmd "habilita que se muestre los comandos que se esten pulsando
 set ruler "habilita la posicion (7,34) 
 set encoding=utf-8 "Enconding del archivo
 set showmatch "Cuando el cursor este sobre un parentesis, se colorea el de cierre
-"set relative number "Lineas de posicion relativas
+set rnu "Lineas de posicion relativas
 "set laststatus=2 "barra inferior visible
 "set noshowmode "no muestra el modo actual p.e --insertar--
 "set paste
