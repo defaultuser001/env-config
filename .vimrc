@@ -35,7 +35,6 @@ call UseSpaces() "or :call UseTabs()
 call plug#begin('~/.vim/plugins')
 
 "Plug 'morhetz/gruvbox' "Tema
-
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
