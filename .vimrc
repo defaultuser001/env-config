@@ -92,7 +92,9 @@ nmap <Leader>qq :qa!<CR>
 nmap <Leader>p <Plug>(Prettier)
 nmap <Leader>l :tabn<CR>
 nmap <Leader>h :tabp<CR>
-nmap <Leader>n :tabnew<CR>let NERDTreeQuitOnOpen=1 "Cierra nerdtree cuando se abre un archivo
+nmap <Leader>n :tabnew<CR>
+
+let NERDTreeQuitOnOpen=1 "Cierra nerdtree cuando se abre un archivo
 
 "NERDTree
 let NERDTreeShowHidden=1 "Archivos ocultos
