@@ -70,6 +70,10 @@ Plug 'epilande/vim-react-snippets'
 " Ultisnips
 Plug 'SirVer/ultisnips'
 
+"JS & JSX
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
+
 
 call plug#end()
 
