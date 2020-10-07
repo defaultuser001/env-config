@@ -13,7 +13,6 @@ set showmatch "Cuando el cursor este sobre un parentesis, se colorea el de cierr
 "set paste
 set cursorline "linea debajo del cursor
 set termguicolors "Algo de los colores
-set foldmethod=indent
 function! UseTabs()
   set tabstop=4     " Size of a hard tabstop (ts).
   set shiftwidth=4  " Size of an indentation (sw).
