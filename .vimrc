@@ -35,10 +35,18 @@ call UseSpaces() "or :call UseTabs()
 call plug#begin('~/.vim/plugins')
 
 "Plug 'morhetz/gruvbox' "Tema
+
+"Buscar a base de 2 letras
 Plug 'easymotion/vim-easymotion'
+
+"Arbol del proyecto
 Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
+
+"Lineas de identacion
 Plug 'Yggdroot/indentLine' 
+
+"Prettier para lenguajes
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
   \ 'branch': 'release/1.x',
@@ -57,8 +65,14 @@ Plug 'prettier/vim-prettier', {
     \ 'ruby',
     \ 'html',
     \ 'swift'] }
+
+"Texto Sugerido
 Plug 'ycm-core/YouCompleteMe'
+
+
+"Nightfly theme
 Plug 'bluz71/vim-nightfly-guicolors'
+
 
 " ES2015 code snippets (Optional)
 Plug 'epilande/vim-es2015-snippets'
@@ -73,6 +87,11 @@ Plug 'SirVer/ultisnips'
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
 
+"EasyGrep (Search and Replace)
+Plug 'vim-scripts/EasyGrep' 
+
+"Fugitive (git plugin)
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
