@@ -93,6 +93,9 @@ Plug 'vim-scripts/EasyGrep'
 "Fugitive (git plugin)
 Plug 'tpope/vim-fugitive'
 
+"Nerd Fonts (for dev icons)
+Plug 'ryanoasis/nerd-fonts'
+
 call plug#end()
 
 "Aplicando tema
