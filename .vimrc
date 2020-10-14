@@ -93,7 +93,10 @@ Plug 'vim-scripts/EasyGrep'
 "Fugitive (git plugin)
 Plug 'tpope/vim-fugitive'
 
+"Emmet for vim
+Plug 'mattn/emmet-vim'
 call plug#end()
+
 
 "Aplicando tema
 "colorscheme gruvbox
