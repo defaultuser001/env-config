@@ -49,22 +49,8 @@ Plug 'Yggdroot/indentLine'
 "Prettier para lenguajes
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
-  \ 'branch': 'release/1.x',
-  \ 'for': [
-    \ 'javascript',
-    \ 'typescript',
-    \ 'css',
-    \ 'less',
-    \ 'scss',
-    \ 'json',
-    \ 'graphql',
-    \ 'markdown',
-    \ 'vue',
-    \ 'lua',
-    \ 'php',
-    \ 'ruby',
-    \ 'html',
-    \ 'swift'] }
+  \ 'branch': 'release/1.x'}
+
 
 "Texto Sugerido
 Plug 'ycm-core/YouCompleteMe'
@@ -107,7 +93,7 @@ colorscheme nightfly
 let mapleader=" " "Tecla lider para ejecutar macros
 
 "Shortcuts
-nmap <Leader>s <Plug>(easymotion-s2)
+nmap <Leader>s :w<CR>
 nmap <Leader>nt :NERDTreeFind<CR> 
 nmap <Leader>w <Plug>(Prettier):w<CR>
 nmap <Leader>q :q<CR>
