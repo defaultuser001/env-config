@@ -34,11 +34,6 @@ call UseSpaces() "or :call UseTabs()
 
 call plug#begin('~/.vim/plugins')
 
-"Plug 'morhetz/gruvbox' "Tema
-
-"Buscar a base de 2 letras
-Plug 'easymotion/vim-easymotion'
-
 "Arbol del proyecto
 Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
