@@ -41,15 +41,11 @@ Plug 'christoomey/vim-tmux-navigator'
 "Lineas de identacion
 Plug 'Yggdroot/indentLine' 
 
-"Prettier para lenguajes
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'npm install',
-  \ 'branch': 'release/1.x'}
-
-
 "Texto Sugerido
 Plug 'ycm-core/YouCompleteMe'
 
+"Prettier para lenguajes
+Plug 'prettier/vim-prettier', { 'do': 'yarn install'}
 
 "Nightfly theme
 Plug 'bluz71/vim-nightfly-guicolors'
