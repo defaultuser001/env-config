@@ -86,14 +86,15 @@ colorscheme nightfly
 let mapleader=" " "Tecla lider para ejecutar macros
 
 "Shortcuts
-nmap <Leader>s :w<CR>
+"nmap <Leader>s :w<CR>
 nmap <Leader>nt :NERDTreeFind<CR> 
-nmap <Leader>w <Plug>(Prettier):w<CR>
+"nmap <Leader>w <Plug>(Prettier):w<CR>
+nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
-nmap <Leader>ww :wq<CR>
-nmap <Leader>wq <Plug>(Prettier):wq<CR>
+"nmap <Leader>ww :wq<CR>
+"nmap <Leader>wq <Plug>(Prettier):wq<CR>
+nmap <Leader>wq :wq<CR>
 nmap <Leader>qq :qa!<CR>
-nmap <Leader>p <Plug>(Prettier)
 nmap <Leader>l :tabn<CR>
 nmap <Leader>h :tabp<CR>
 nmap <Leader>n :tabnew<CR>
