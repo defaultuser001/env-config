@@ -41,39 +41,10 @@ Plug 'christoomey/vim-tmux-navigator'
 "Lineas de identacion
 Plug 'Yggdroot/indentLine' 
 
-"Texto Sugerido
-Plug 'ycm-core/YouCompleteMe'
 
 "Nightfly theme
 Plug 'bluz71/vim-nightfly-guicolors'
 
-"Plug 'prettier/vim-prettier', {
-"  \ 'do': 'yarn install',
-"  \ 'branch': 'release/1.x'
-"  \ }
-
-
-" ES2015 code snippets (Optional)
-Plug 'epilande/vim-es2015-snippets'
-
-" React code snippets
-Plug 'epilande/vim-react-snippets'
-
-" Ultisnips
-Plug 'SirVer/ultisnips'
-
-"JS & JSX
-Plug 'yuezk/vim-js'
-Plug 'maxmellon/vim-jsx-pretty'
-
-"EasyGrep (Search and Replace)
-Plug 'vim-scripts/EasyGrep' 
-
-"Fugitive (git plugin)
-Plug 'tpope/vim-fugitive'
-
-"Emmet for vim
-Plug 'mattn/emmet-vim'
 call plug#end()
 
 
@@ -86,13 +57,9 @@ colorscheme nightfly
 let mapleader=" " "Tecla lider para ejecutar macros
 
 "Shortcuts
-"nmap <Leader>s :w<CR>
 nmap <Leader>nt :NERDTreeFind<CR> 
-"nmap <Leader>w <Plug>(Prettier):w<CR>
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
-"nmap <Leader>ww :wq<CR>
-"nmap <Leader>wq <Plug>(Prettier):wq<CR>
 nmap <Leader>wq :wq<CR>
 nmap <Leader>qq :qa!<CR>
 nmap <Leader>l :tabn<CR>
@@ -109,76 +76,3 @@ let g:indentLine_char = '|'
 let g:indentLine_enabled = 1
 let g:indentLine_setColors = 0 "Para el tema nightfly, comentar en caso de problemas 
 
-"React Snippets
-" Trigger configuration (Optional)
-" let g:UltiSnipsExpandTrigger="<C-l>"
-
-"Snippets
-
-""Skeleton
-"""Trigger 	Content
-"""rrcc→ 	React Redux Class Component
-"""rcc→ 	React Class Component
-"""rfc→ 	React Functional Component
-"""rsc→ 	React Styled Component
-"""rsci→ 	React Styled Component Interpolation
-
-
-""Lifecycle
-"""Trigger 	Content
-"""cwm→ 	componentWillMount() {...}
-"""cdm→ 	componentDidMount() {...}
-"""cwrp→ 	componentWillReceiveProps(nextProps) {...}
-"""scup→ 	shouldComponentUpdate(nextProps, nextState) {...}
-"""cwup→ 	componentWillUpdate(nextProps, nextState) {...}
-"""cdup→ 	componentDidUpdate(prevProps, prevState) {...}
-"""cwu→ 	componentWillUnmount() {...}
-"""ren→ 	render() {...}
-
-""PropTypes
-"""Trigger 	Content
-"""pt→ 	propTypes {...}
-"""pt.a→ 	PropTypes.array
-"""pt.b→ 	PropTypes.bool
-"""pt.f→ 	PropTypes.func
-"""pt.n→ 	PropTypes.number
-"""pt.o→ 	PropTypes.object
-"""pt.s→ 	PropTypes.string
-"""pt.no→ 	PropTypes.node
-"""pt.e→ 	PropTypes.element
-"""pt.io→ 	PropTypes.instanceOf
-"""pt.one→ 	PropTypes.oneOf
-"""pt.onet→ 	PropTypes.oneOfType (Union)
-"""pt.ao→ 	PropTypes.arrayOf (Instances)
-"""pt.oo→ 	PropTypes.objectOf
-"""pt.sh→ 	PropTypes.shape
-"""ir→ 	isRequired
-
-""Others
-"""Trigger 	Content
-"""props→ 	this.props
-"""state→ 	this.state
-"""set→ 	this.setState(...)
-"""dp→ 	defaultProps {...}
-"""cn→ 	className
-"""ref→ 	ref
-"""pp→ 	${props => props}
-
-""Hooks
-"""Trigger 	Content
-"""us.s→ 	const [state, setState] = useState('');
-"""us.e→ 	useEffect(() => { });
-"""us.er→ 	useEffect(() => { return () => {}; });
-"""us.c→ 	const context = useContext(ctx);
-"""us.r→ 	const [store, dispatch] = useReducer(storeReducer, initialState);
-"""us.cb→ 	useCallback(() => { }, []);
-"""us.m→ 	const memo = useMemo(() => { }, []);
-
-"Prettier
-"let g:prettier#quickfix_enabled = 1
-"let g:prettier#quickfix_auto_focus = 1
-
-"You complete me (autocomplete plugin)
-let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
-let g:ycm_key_list_select_completion=[]
-let g:ycm_key_list_previous_completion=[]
