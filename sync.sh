@@ -1,3 +1,6 @@
+cp ~/.vimrc /root
+cp -r ~/.vim/ /root
+
 cp ~/.vimrc ~/vim-config
 cd ~/vim-config
 

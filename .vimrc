@@ -41,6 +41,8 @@ Plug 'christoomey/vim-tmux-navigator'
 "Lineas de identacion
 Plug 'Yggdroot/indentLine' 
 
+"Comentarios
+Plug 'tpope/vim-commentary'
 
 "Nightfly theme
 Plug 'bluz71/vim-nightfly-guicolors'
@@ -57,6 +59,7 @@ colorscheme nightfly
 let mapleader=" " "Tecla lider para ejecutar macros
 
 "Shortcuts
+noremap / :Commentary
 nmap <Leader>nt :NERDTreeFind<CR> 
 nmap <Leader>w :w<CR>
 nmap <Leader>q :q<CR>
