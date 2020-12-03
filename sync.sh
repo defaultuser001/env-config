@@ -1,5 +1,5 @@
-cp ~/.vimrc /root
-cp -r ~/.vim/ /root
+sudo cp ~/.vimrc /root
+sudo cp -r ~/.vim/ /root
 
 cp ~/.vimrc ~/vim-config
 cd ~/vim-config
