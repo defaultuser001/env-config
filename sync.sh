@@ -1,4 +1,6 @@
 sudo cp ~/.vimrc /root
+sudo cp ~/.vimrc.local /root
+
 sudo cp -r ~/.vim/ /root
 
 cp ~/.vimrc ~/vim-config
