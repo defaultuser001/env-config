@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cp ./.vimrc ../
-cp ./.vimrc.local ../
+cp ~/vim-config/.vimrc ~/
+cp ~/vim-config/.vimrc.local ~/
