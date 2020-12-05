@@ -1,7 +1,7 @@
 set number
 set mouse=a  "Control del mouse, habilita el uso
 set numberwidth=1 "Ancho de los números de linea
-set clipboard=unnamedplus "Habilita el clipboard para todo el sistema
+set clipboard=unnamed "Habilita el clipboard para todo el sistema
 syntax enable "habilita colores de sintaxis
 set showcmd "habilita que se muestre los comandos que se esten pulsando
 set ruler "habilita la posicion (7,34) 
@@ -49,7 +49,6 @@ Plug 'bluz71/vim-nightfly-guicolors'
 
 call plug#end()
 
-
 "Aplicando tema
 "colorscheme gruvbox
 colorscheme nightfly
@@ -70,7 +69,6 @@ nmap <Leader>h :tabp<CR>
 nmap <Leader>n :tabnew<CR>
 
 let NERDTreeQuitOnOpen=1 "Cierra nerdtree cuando se abre un archivo
-
 "NERDTree
 let NERDTreeShowHidden=1 "Archivos ocultos
 
