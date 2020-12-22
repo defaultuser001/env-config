@@ -1,7 +1,7 @@
-cd ~/vim-config
+cd ~/env-config
 sudo git pull origin master
-cp ~/vim-config/.vimrc ~/.vimrc
-sudo cp ~/vim-config/.vimrc /root
+cp ~/env-config/.vimrc ~/.vimrc
+sudo cp ~/env-config/.vimrc /root
 sudo cp -r ~/.vim/ /root
 
 

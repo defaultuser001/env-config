@@ -1,8 +1,8 @@
 sudo cp ~/.vimrc /root
 sudo cp -r ~/.vim/ /root
 
-cp ~/.vimrc ~/vim-config
-cd  ~/vim-config
+cp ~/.vimrc ~/env-config
+cd  ~/env-config
 
 git add .
 git commit -am "automatic update"
