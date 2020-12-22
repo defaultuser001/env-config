@@ -8,6 +8,6 @@ cp ~/env-config/plug.vim ~/.vim/autoload
 sudo apt  install -y vim-gtk 
 
 #Terminator
-cp ~/env-config/terminator ~/.config/
+cp -r ~/env-config/terminator ~/.config/
 
 echo  ' En vim:: PlugInstall '
