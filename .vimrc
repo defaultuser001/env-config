@@ -2,6 +2,7 @@ set number
 set mouse=a  "Control del mouse, habilita el uso
 set numberwidth=1 "Ancho de los números de linea
 set clipboard=unnamedplus "Habilita el clipboard para todo el sistema
+"set clipboard=unnamed "windows
 syntax enable "habilita colores de sintaxis
 set showcmd "habilita que se muestre los comandos que se esten pulsando
 set ruler "habilita la posicion (7,34) 
