@@ -48,6 +48,44 @@ Plug 'tpope/vim-commentary'
 "Nightfly theme
 Plug 'bluz71/vim-nightfly-guicolors'
 
+"Lineas de identacion
+Plug 'Yggdroot/indentLine' 
+
+"Prettier para lenguajes
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'npm install',
+  \ 'branch': 'release/1.x'}
+
+"Texto Sugerido
+Plug 'ycm-core/YouCompleteMe'
+
+"Nightfly theme
+Plug 'bluz71/vim-nightfly-guicolors'
+
+
+" ES2015 code snippets (Optional)
+Plug 'epilande/vim-es2015-snippets'
+
+" React code snippets
+Plug 'epilande/vim-react-snippets'
+
+" Ultisnips
+Plug 'SirVer/ultisnips'
+
+"JS & JSX
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
+
+"EasyGrep (Search and Replace)
+Plug 'vim-scripts/EasyGrep' 
+
+"Fugitive (git plugin)
+Plug 'tpope/vim-fugitive'
+
+"Emmet for vim
+Plug 'mattn/emmet-vim'
+
+
 call plug#end()
 
 "Aplicando tema
@@ -60,11 +98,14 @@ let mapleader=" " "Tecla lider para ejecutar macros
 
 "Shortcuts
 noremap / :Commentary
+nmap <Leader>s :w<CR>
 nmap <Leader>nt :NERDTreeFind<CR> 
-nmap <Leader>w :w<CR>
+nmap <Leader>w <Plug>(Prettier):w<CR>
 nmap <Leader>q :q<CR>
-nmap <Leader>wq :wq<CR>
+nmap <Leader>ww :wq<CR>
+nmap <Leader>wq <Plug>(Prettier):wq<CR>
 nmap <Leader>qq :qa!<CR>
+nmap <Leader>p <Plug>(Prettier)
 nmap <Leader>l :tabn<CR>
 nmap <Leader>h :tabp<CR>
 nmap <Leader>n :tabnew<CR>
@@ -77,4 +118,118 @@ let NERDTreeShowHidden=1 "Archivos ocultos
 let g:indentLine_char = '|'
 let g:indentLine_enabled = 1
 let g:indentLine_setColors = 0 "Para el tema nightfly, comentar en caso de problemas 
+
+
+"React Snippets
+" Trigger configuration (Optional)
+" let g:UltiSnipsExpandTrigger="<C-l>"
+
+"Snippets
+
+""Skeleton
+"""Trigger 	Content
+"""rrcc→ 	React Redux Class Component
+"""rcc→ 	React Class Component
+"""rfc→ 	React Functional Component
+"""rsc→ 	React Styled Component
+"""rsci→ 	React Styled Component Interpolation
+
+
+""Lifecycle
+"""Trigger 	Content
+"""cwm→ 	componentWillMount() {...}
+"""cdm→ 	componentDidMount() {...}
+"""cwrp→ 	componentWillReceiveProps(nextProps) {...}
+"""scup→ 	shouldComponentUpdate(nextProps, nextState) {...}
+"""cwup→ 	componentWillUpdate(nextProps, nextState) {...}
+"""cdup→ 	componentDidUpdate(prevProps, prevState) {...}
+"""cwu→ 	componentWillUnmount() {...}
+"""ren→ 	render() {...}
+
+""PropTypes
+"""Trigger 	Content
+"""pt→ 	propTypes {...}
+"""pt.a→ 	PropTypes.array
+"""pt.b→ 	PropTypes.bool
+"""pt.f→ 	PropTypes.func
+"""pt.n→ 	PropTypes.number
+"""pt.o→ 	PropTypes.object
+"""pt.s→ 	PropTypes.string
+"""pt.no→ 	PropTypes.node
+"""pt.e→ 	PropTypes.element
+"""pt.io→ 	PropTypes.instanceOf
+"""pt.one→ 	PropTypes.oneOf
+"""pt.onet→ 	PropTypes.oneOfType (Union)
+"""pt.ao→ 	PropTypes.arrayOf (Instances)
+"""pt.oo→ 	PropTypes.objectOf
+"""pt.sh→ 	PropTypes.shape
+"""ir→ 	isRequired
+
+""Others
+"""Trigger 	Content
+"""props→ 	this.props
+"""state→ 	this.state
+"""set→ 	this.setState(...)
+"""dp→ 	defaultProps {...}
+"""cn→ 	className
+"""ref→ 	ref
+"""pp→ 	${props => props}
+
+""Hooks
+"""Trigger 	Content
+"""us.s→ 	const [state, setState] = useState('');
+"""us.e→ 	useEffect(() => { });
+"""us.er→ 	useEffect(() => { return () => {}; });
+"""us.c→ 	const context = useContext(ctx);
+"""us.r→ 	const [store, dispatch] = useReducer(storeReducer, initialState);
+"""us.cb→ 	useCallback(() => { }, []);
+"""us.m→ 	const memo = useMemo(() => { }, []);
+
+"Prettier
+" Max line length that prettier will wrap on: a number or 'auto' (use
+" textwidth).
+" default: 'auto'
+let g:prettier#config#print_width = 'auto'
+
+" number of spaces per indentation level: a number or 'auto' (use
+" softtabstop)
+" default: 'auto'
+let g:prettier#config#tab_width = 'auto'
+
+" use tabs instead of spaces: true, false, or auto (use the expandtab setting).
+" default: 'auto'
+let g:prettier#config#use_tabs = 'auto'
+
+" flow|babylon|typescript|css|less|scss|json|graphql|markdown or empty string
+" (let prettier choose).
+" default: ''
+let g:prettier#config#parser = ''
+
+" cli-override|file-override|prefer-file
+" default: 'file-override'
+let g:prettier#config#config_precedence = 'file-override'
+
+" always|never|preserve
+" default: 'preserve'
+let g:prettier#config#prose_wrap = 'preserve'
+
+" css|strict|ignore
+" default: 'css'
+let g:prettier#config#html_whitespace_sensitivity = 'css'
+
+" false|true
+" default: 'false'
+let g:prettier#config#require_pragma = 'false'
+
+" Define the flavor of line endings
+" lf|crlf|cr|all
+" defaut: 'lf'
+let g:prettier#config#end_of_line = get(g:, 'prettier#config#end_of_line', 'lf')
+
+
+"You complete me (autocomplete plugin)
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
+
 
