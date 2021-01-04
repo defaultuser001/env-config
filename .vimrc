@@ -85,6 +85,8 @@ Plug 'tpope/vim-fugitive'
 "Emmet for vim
 Plug 'mattn/emmet-vim'
 
+"C#
+Plug 'omnisharp/omnisharp-vim'
 
 call plug#end()
 
