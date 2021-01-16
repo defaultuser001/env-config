@@ -56,8 +56,6 @@ Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
   \ 'branch': 'release/1.x'}
 
-"Texto Sugerido
-Plug 'ycm-core/YouCompleteMe'
 
 "Nightfly theme
 Plug 'bluz71/vim-nightfly-guicolors'
@@ -78,13 +76,6 @@ Plug 'maxmellon/vim-jsx-pretty'
 
 "EasyGrep (Search and Replace)
 Plug 'vim-scripts/EasyGrep' 
-
-"Fugitive (git plugin)
-Plug 'tpope/vim-fugitive'
-
-"Emmet for vim
-Plug 'mattn/emmet-vim'
-
 
 call plug#end()
 
