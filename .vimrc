@@ -80,12 +80,6 @@ Plug 'vim-scripts/EasyGrep'
 "Pug 
 Plug 'digitaltoad/vim-pug' 
 
-"Styled Components
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-
-"COC 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 call plug#end()
 
 "Aplicando tema
