@@ -77,6 +77,12 @@ Plug 'maxmellon/vim-jsx-pretty'
 "EasyGrep (Search and Replace)
 Plug 'vim-scripts/EasyGrep' 
 
+"Pug 
+Plug 'digitaltoad/vim-pug' 
+
+"Styled Components
+Plug 'styled-components/vim-styled-components', { 'branch':'main'}
+
 call plug#end()
 
 "Aplicando tema
