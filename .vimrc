@@ -85,6 +85,8 @@ Plug 'digitaltoad/vim-pug'
 "Styled Components
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
+"C
+Plug 'vim-scripts/c.vim'
 
 "COC
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install() } }
