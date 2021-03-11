@@ -44,6 +44,7 @@ let g:coc_global_extensions = [
 \ 'coc-clangd',
 \ 'coc-cssmodules',
 \ 'coc-eslint',
+\ 'coc-sh',
 \ 'coc-highlight'
 \ ]
 
