@@ -45,6 +45,7 @@ let g:coc_global_extensions = [
 \ 'coc-cssmodules',
 \ 'coc-eslint',
 \ 'coc-sh',
+\ 'coc-prettier',
 \ 'coc-highlight'
 \ ]
 
@@ -66,9 +67,9 @@ Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'Yggdroot/indentLine' 
 
 "Prettier para lenguajes
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'npm install',
-  \ 'branch': 'release/1.x'}
+"Plug 'prettier/vim-prettier', {
+"  \ 'do': 'npm install',
+"  \ 'branch': 'release/1.x'}
 
 "Nightfly theme
 Plug 'bluz71/vim-nightfly-guicolors'
@@ -106,12 +107,12 @@ let mapleader=" " "Tecla lider para ejecutar macros
 noremap / :Commentary
 nmap <Leader>s :w<CR>
 nmap <Leader>nt :NERDTreeFind<CR> 
-nmap <Leader>w <Plug>(Prettier):w<CR>
+nmap <Leader>w <Plug>(coc-format):w<CR>
 nmap <Leader>q :q<CR>
 nmap <Leader>ww :wq<CR>
-nmap <Leader>wq <Plug>(Prettier):wq<CR>
+nmap <Leader>wq <Plug>(coc-format):wq<CR>
 nmap <Leader>qq :qa!<CR>
-nmap <Leader>p <Plug>(Prettier)
+nmap <Leader>p <Plug>(coc-format)
 nmap <Leader>l :tabn<CR>
 nmap <Leader>h :tabp<CR>
 nmap <Leader>n :tabnew<CR>
@@ -125,44 +126,3 @@ let g:indentLine_char = '|'
 let g:indentLine_enabled = 1
 let g:indentLine_setColors = 0 "Para el tema nightfly, comentar en caso de problemas 
 
-
-"Prettier
-" Max line length that prettier will wrap on: a number or 'auto' (use
-" textwidth).
-" default: 'auto'
-let g:prettier#config#print_width = 'auto'
-
-" number of spaces per indentation level: a number or 'auto' (use
-" softtabstop)
-" default: 'auto'
-let g:prettier#config#tab_width = 'auto'
-
-" use tabs instead of spaces: true, false, or auto (use the expandtab setting).
-" default: 'auto'
-let g:prettier#config#use_tabs = 'auto'
-
-" flow|babylon|typescript|css|less|scss|json|graphql|markdown or empty string
-" (let prettier choose).
-" default: ''
-let g:prettier#config#parser = ''
-
-" cli-override|file-override|prefer-file
-" default: 'file-override'
-let g:prettier#config#config_precedence = 'file-override'
-
-" always|never|preserve
-" default: 'preserve'
-let g:prettier#config#prose_wrap = 'preserve'
-
-" css|strict|ignore
-" default: 'css'
-let g:prettier#config#html_whitespace_sensitivity = 'css'
-
-" false|true
-" default: 'false'
-let g:prettier#config#require_pragma = 'false'
-
-" Define the flavor of line endings
-" lf|crlf|cr|all
-" defaut: 'lf'
-let g:prettier#config#end_of_line = get(g:, 'prettier#config#end_of_line', 'lf')
