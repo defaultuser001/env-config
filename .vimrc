@@ -66,11 +66,6 @@ Plug 'bluz71/vim-nightfly-guicolors'
 "Lineas de identacion
 Plug 'Yggdroot/indentLine' 
 
-"Prettier para lenguajes
-"Plug 'prettier/vim-prettier', {
-"  \ 'do': 'npm install',
-"  \ 'branch': 'release/1.x'}
-
 "Nightfly theme
 Plug 'bluz71/vim-nightfly-guicolors'
 
