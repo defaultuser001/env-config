@@ -112,6 +112,11 @@ nmap <Leader>l :tabn<CR>
 nmap <Leader>h :tabp<CR>
 nmap <Leader>n :tabnew<CR>
 
+" Apply AutoFix to problem on the current line.
+nmap <leader>qf  <Plug>(coc-fix-current)
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+
 let NERDTreeQuitOnOpen=1 "Cierra nerdtree cuando se abre un archivo
 "NERDTree
 let NERDTreeShowHidden=1 "Archivos ocultos
@@ -120,4 +125,5 @@ let NERDTreeShowHidden=1 "Archivos ocultos
 let g:indentLine_char = '|'
 let g:indentLine_enabled = 1
 let g:indentLine_setColors = 0 "Para el tema nightfly, comentar en caso de problemas 
+
 
