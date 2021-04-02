@@ -44,6 +44,7 @@ let g:coc_global_extensions = [
 \ 'coc-clangd',
 \ 'coc-cssmodules',
 \ 'coc-eslint',
+\ 'coc-pairs',
 \ 'coc-sh',
 \ 'coc-prettier',
 \ 'coc-highlight'
@@ -116,6 +117,11 @@ nmap <Leader>n :tabnew<CR>
 nmap <leader>qf  <Plug>(coc-fix-current)
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
+"inoremap <silent><expr> <c-space> coc#refresh()
+inoremap <silent><expr> <c-space> coc#_select_confirm()
+
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 let NERDTreeQuitOnOpen=1 "Cierra nerdtree cuando se abre un archivo
 "NERDTree
