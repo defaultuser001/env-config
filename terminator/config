@@ -5,10 +5,10 @@
   go_down = <Alt>j
   go_left = <Alt>h
   go_right = <Alt>l
-  resize_up = <Primary>k
-  resize_down = <Primary>j
-  resize_left = <Primary>h
-  resize_right = <Primary>l
+  resize_up = <Primary><Super>k
+  resize_down = <Primary><Super>j
+  resize_left = <Primary><Super>h
+  resize_right = <Primary><Super>l
   layout_launcher = None
 [profiles]
   [[default]]
